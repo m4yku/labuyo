@@ -1,0 +1,108 @@
+/* contact.css */
+
+.contact-section { padding: 80px 0 100px; background: var(--off-white); }
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 48px;
+  align-items: flex-start;
+}
+
+.contact-form-wrap {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 48px;
+  box-shadow: var(--shadow-sm);
+  border: 1.5px solid var(--border);
+}
+
+.contact-form-title {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 8px;
+}
+
+.contact-form-sub { color: var(--text-mid); font-size: 0.95rem; }
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Info Panel */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  position: sticky;
+  top: 100px;
+}
+
+.contact-info-card {
+  background: var(--white);
+  border-radius: var(--radius-md);
+  padding: 20px 22px;
+  border: 1.5px solid var(--border);
+}
+
+.contact-info-icon { font-size: 1.5rem; margin-bottom: 8px; }
+
+.contact-info-label {
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--text-light);
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.contact-info-value {
+  font-size: 0.95rem;
+  color: var(--text-dark);
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.contact-info-value a {
+  color: var(--teal-dim);
+  transition: color var(--transition);
+}
+
+.contact-info-value a:hover { color: var(--teal); }
+
+.contact-cta-card {
+  background: var(--navy);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  margin-top: 4px;
+}
+
+.contact-cta-title {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 8px;
+}
+
+.contact-cta-card p {
+  color: rgba(255,255,255,0.65);
+  font-size: 0.875rem;
+}
+
+@media (max-width: 900px) {
+  .contact-layout { grid-template-columns: 1fr; }
+  .contact-info   { position: static; }
+  .contact-info   { flex-direction: row; flex-wrap: wrap; }
+  .contact-info-card { flex: 1; min-width: 200px; }
+  .contact-cta-card  { flex: 100%; }
+}
+
+@media (max-width: 640px) {
+  .contact-form-wrap { padding: 28px 20px; }
+  .contact-info-card { flex: 100%; }
+}
