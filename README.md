@@ -38,4 +38,5 @@ labuyo-fisheries/
 ├── index.php           # Landing Page
 ├── about.php           # Our Story Page
 ├── order.php           # Order Interface
-└── contact.php         # Contact Information
+├── contact.php         # Contact Information
+└── schema.sql       # database schema for ordering system database
