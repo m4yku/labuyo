@@ -1,6 +1,6 @@
 # Labuyo Fisheries Corp. 🐟
 
-![UI Preview](images/ObandoBulacanPhilippines.jpg) *(Note: You can replace this link with an actual screenshot of your website once uploaded)*
+![UI Preview](images/screenshot.png) 
 
 A responsive, dynamic web application built for a local aquaculture business based in Obando, Bulacan. Labuyo Fisheries Corp. specializes in delivering sustainably farmed, premium *Bangus* (milkfish) directly to consumers.
 
